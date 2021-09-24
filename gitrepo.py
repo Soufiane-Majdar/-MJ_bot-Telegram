@@ -20,7 +20,7 @@ repo_name='//*[@id="repository_name"]'
 
 def makerepo(reponame):
     try:
-        driver = webdriver.Firefox(executable_path=r'geckodriver.exe')
+        driver = webdriver.Firefox()
 
         driver.get('https://github.com/new')
         time.sleep(2)
